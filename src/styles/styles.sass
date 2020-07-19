@@ -1,0 +1,54 @@
+@import utils/vars
+@import utils/_sprite.sass
+@import utils/fonts-layout.scss
+@import utils/mediaQueries.scss
+
+*
+*::before
+*::after 
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+html 
+    box-sizing: border-box
+    font-size: 62.5%  // 10px = 1rem; 10/16px = 62.5%;
+
+    @include responsive(4k) 
+        font-size: 75% // 12px = 1rem
+    
+
+    @include responsive(laptopL) 
+        font-size: 56.25%  // 9px = 1rem; 9/16px = 56.25%;
+    
+
+    @include responsive(laptop) 
+        font-size: 50%  // 8px 
+    
+
+
+.body 
+    // font-family: $light-font
+    color: $black 
+    font-weight: 400
+    line-height: 1.6
+
+a 
+    text-decoration: none
+    color: $black 
+
+li
+    list-style-type: none
+
+button
+    cursor: pointer
+
+
+button:active, 
+button:focus 
+    outline: none
+
+
+
+@import modules/modules
+@import utils/libs
