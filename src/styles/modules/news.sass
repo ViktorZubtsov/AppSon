@@ -1,0 +1,80 @@
+.news
+    padding: 2.8em 0
+    display: flex
+    align-items: center
+    flex-direction: column
+
+    &__title 
+        background-image: url('../img/news-logo.png')
+        margin: 0
+        height: 80px
+        background-repeat: no-repeat
+        background-position: center
+        display: flex
+        align-items: center
+
+    &__description
+        width: 700px
+        text-align: center
+
+
+    &-content 
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(3, 150px) 60px 
+        grid-gap: 10px 
+        padding: 50px 120px 
+        
+    
+    &-post 
+        display: flex
+        align-items: center
+        flex-direction: row
+        justify-content: space-between
+        
+        
+
+        &-content 
+            padding:  0 0 0 25px
+        
+
+        &__title 
+            font-size: 1.7rem
+            margin: 0
+            &_first 
+                color: $blue 
+                margin: 30px 0 
+
+
+        &__text
+            margin: 0 
+
+
+        &_one
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 1
+            grid-row-end: 4
+            
+        &_two
+            grid-column-start: 2
+            grid-column-end: 3
+            grid-row-start: 1
+            grid-row-end: 2
+            
+        &_three
+            grid-column-start: 2
+            grid-column-end: 3
+            grid-row-start: 2
+            grid-row-end: 3
+        &_fou
+            grid-column-start: 2
+            grid-column-end: 3
+            grid-row-start: 4
+            grid-row-end: 5
+            
+.news-first-post__button
+    margin: 35px 0 
+    padding: 0 
+
+    
