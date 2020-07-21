@@ -1,0 +1,55 @@
+.features
+    display: flex
+    width: 100%
+    justify-content: center
+    padding: 180px 0 
+
+.card-features
+    width: 350px  
+    height: 280px
+    display: flex
+    flex-direction: column
+    background-color: $white
+    margin: 0 15px 
+    align-items: center
+    justify-content: center 
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.23)
+
+    &_central
+        margin-top: 50px
+
+
+    &__icon 
+        display: flex
+        width:  70px
+        height: 70px
+        border-radius: 50%
+        text-align: center
+        align-items: center
+        
+
+        &_theme_light-blue
+            background: $light-blue
+
+        &_theme_light-pink
+            background: $light-pink
+
+        &_theme_light-green
+            background: $light-green
+
+        &-img 
+            margin: 0 auto
+            
+    &__title
+        font-family: $medium-font
+        font-size: 2rem 
+        margin: 1.3em  0 
+        color: $light-dark
+
+    &__description 
+        font-family: $light-font 
+        font-size: 1.5rem 
+        line-height: 1.4em 
+        color: $gray-nav
+        text-align: center 
+        margin: 0 
