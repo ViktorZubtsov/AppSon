@@ -1,0 +1,45 @@
+.footer
+
+    &-wrapper 
+        display: grid
+        grid-template-rows: 1fr
+        grid-template-columns: 2fr 2fr 1fr 1fr 
+        padding: 2.8em 0 
+        font-family: $light-font
+        font-size: 1.3rem 
+        
+
+    &-copyright 
+        color: $white 
+        
+    &-nav 
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+        &__link 
+            margin: 0 15px 
+            color: $white 
+            opacity: 0.8
+            &:first-child
+                opacity: 1
+    &-social
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        
+        &__icon 
+            display: block
+            margin: 12.5px
+
+            &_fb
+                @include sprite($social-icon_fb)
+            &_tw 
+                @include sprite($social-icon_twitter)
+            &_yt 
+                @include sprite($social-icon_yt)
+    
+    &-scroll
+        display: flex
+        justify-content: flex-end
+
