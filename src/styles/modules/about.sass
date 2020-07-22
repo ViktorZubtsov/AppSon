@@ -1,0 +1,60 @@
+.about
+    display: grid
+    grid-template: repeat(2,1fr) / repeat(2,1fr) 
+    padding: 70px 0
+    grid-gap: 194px 0
+
+    
+    &-images 
+        width: 420px 
+        height: 420px 
+        transform: rotate(45deg)
+        border-radius: 49px
+
+        &__img
+            transform: rotate(-45deg)
+            position: relative
+            border-radius: 10px
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.23)
+
+            &_one
+                right: -151px
+                top: 0px
+        
+            &_two
+                right: -288px
+                top: -487px
+            &_three
+                right: 2px
+                top: 113px
+            &_four
+                right: -106px
+                top: -377px   
+        &_end
+            justify-self: end
+
+
+
+
+
+    &-description 
+        width: 500px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &__title 
+
+        &__text 
+            text-align: left
+        &__button 
+            padding: 0
+
+
+
+
+
+
+
+
+
+
