@@ -1,0 +1,79 @@
+.testimonials
+    display: grid
+    grid-template-columns: 1fr 120px 3fr
+    grid-template-rows: 127px auto 100px
+
+    &-img
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 1
+        grid-row-end: 4
+        width: 600px 
+
+    &-title 
+        display: flex
+        align-items: center
+        grid-column-start: 3
+        grid-column-end: 4
+        grid-row-start: 1
+        grid-row-end: 2
+
+    &-content 
+        display: grid
+        grid-template-columns: 2fr 2fr 1fr
+        grid-template-rows: repeat(1,1fr)
+        grid-column-start: 3
+        grid-column-end: 4
+        grid-row-start: 2
+        grid-row-end: 3
+        overflow: hidden
+
+
+    &-post 
+        width: 320px 
+        height: 240px 
+        background: $white
+        margin: 10px
+        padding: 20px 30px 
+        height: 200px
+        box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.23)
+
+        &__title
+            margin: 0 
+            display: flex
+            justify-content: space-between
+            &:after
+                content: ''
+                display: block
+                @include sprite($testimonials-tw)
+
+        &__cite 
+            margin: 0 
+            font-style: normal
+
+        &__feedback
+            margin: 34px 0 0 0 
+            text-align: left
+            
+.slider-controll
+    padding-top: 25px
+    grid-column-start: 3
+    grid-column-end: 4
+    grid-row-start: 3
+    grid-row-end: 4
+    &-point
+        width: 18px
+        height: 10px
+        border-radius: 25px 
+        background-color: $gray-nav
+        border: 0 
+        margin: 7.5px
+        &_active
+            background-color: $blue 
+            width: 30px
+
+
+    
+
+
+
