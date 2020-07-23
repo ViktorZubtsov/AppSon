@@ -15,7 +15,7 @@ html
     font-size: 62.5%  // 10px = 1rem; 10/16px = 62.5%;
 
     @include responsive(4k) 
-        font-size: 75% // 12px = 1rem
+        font-size: 95% // 12px = 1rem
     
 
     @include responsive(laptopL) 
@@ -35,8 +35,14 @@ html
     color: $gray-nav
 
 .wrapper 
-    width: 1400px
+    width: 960px
     margin: 0 auto
+
+    @include responsive(laptop)
+        width: 765px
+    @include responsive(tablet)
+        width: 85%
+
 .bg
     background-color:  $bg 
 .bg-blue
