@@ -4,6 +4,7 @@
     align-items: center
     flex-direction: column
 
+
     &__title 
         background-image: url('../img/news-logo.png')
         margin: 0
@@ -14,7 +15,6 @@
         align-items: center
 
     &__description
-        width: 700px
         text-align: center
 
 
@@ -24,27 +24,43 @@
         grid-template-rows: repeat(3, 150px) 60px 
         grid-gap: 10px 
         padding: 50px 120px 
-        
+        @include responsive(4k)
+            grid-template-rows: repeat(3, 190px) 60px 
+        @include responsive(laptopL)
+            padding: 50px 30px
+        @include responsive(laptop)
+            grid-template-columns: 1fr 2fr 1fr
+            grid-template-rows: 1fr 150px
+        @include responsive(tablet)
+            grid-template-columns: 1fr 
+            padding: 50px 5px
+        @include responsive(mobileM)
+            grid-template-rows: auto
     
     &-post 
         display: flex
         align-items: center
         flex-direction: row
         justify-content: space-between
-        
+        @include responsive(laptop)
+            grid-column: 2 / 3 
+        @include responsive(tablet)
+            grid-column: 1 / 3 
+        @include responsive(mobileM)
+            flex-direction: column
         
 
         &-content 
             padding:  0 0 0 25px
-        
-
+                
         &__title 
             font-size: 1.7rem
             margin: 0
             &_first 
                 color: $blue 
                 margin: 30px 0 
-
+            @include responsive(mobileM)
+                margin-top: 15px
 
         &__text
             margin: 0 
@@ -55,23 +71,39 @@
             grid-column-end: 2
             grid-row-start: 1
             grid-row-end: 4
-            
+            @include responsive(laptop)
+                grid-row: 1 / 2 
+                grid-column: 2 / 3 
+            @include responsive(tablet)
+                grid-column: 1 /3 
+                &>img 
+                    width: 415px 
+            @include responsive(mobileL)
+                &>img 
+                    width: 305px  
+
+
         &_two
             grid-column-start: 2
             grid-column-end: 3
             grid-row-start: 1
             grid-row-end: 2
-            
+            @include responsive(laptop)
+                grid-row: 2 / 3
         &_three
             grid-column-start: 2
             grid-column-end: 3
             grid-row-start: 2
             grid-row-end: 3
-        &_fou
+            @include responsive(laptop)
+                grid-row: 3 / 4
+        &_four
             grid-column-start: 2
             grid-column-end: 3
-            grid-row-start: 4
-            grid-row-end: 5
+            grid-row-start: 3
+            grid-row-end: 4
+            @include responsive(laptop)
+                grid-row: 4 / 5
             
 .news-first-post__button
     margin: 35px 0 
