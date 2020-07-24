@@ -15,7 +15,7 @@ module.exports = function() {
             .pipe(spritesmith({
                 imgName: 'spritePng.png',
                 cssName: '_sprite.sass',
-                padding: 10,
+                padding: 35,
                 imgPath: '../img/spritePng.png',
             }));
         spriteData.img.pipe( $.gulp.dest(spritePath.output)); 
@@ -28,7 +28,7 @@ module.exports = function() {
             .pipe(spritesmith({
                 imgName: 'spritePng.png',
                 cssName: '_sprite.sass',
-                padding: 10,
+                padding: 35,
                 imgPath: '../img/spritePng.png',
             }));
         spriteData.img.pipe( $.gulp.dest(spritePath.outputBuild)); 

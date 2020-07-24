@@ -1,0 +1,130 @@
+.testimonials
+    display: grid
+    grid-template-columns: 1fr 120px 3fr
+    grid-template-rows: 127px auto 100px
+    @include responsive(laptopL)
+        grid-template-columns: 1fr 20px 3fr
+    @include responsive(laptop)
+        grid-template-columns: 1fr 10px 3fr
+    @include responsive(tablet)
+        grid-template-columns: 1fr 
+        grid-template-rows: 1fr auto
+
+
+    &-img
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 1
+        grid-row-end: 4
+        width: 600px 
+        @include responsive(4k)
+            width: 765px 
+        @include responsive(laptop)
+            width: 445px
+        @include responsive(tablet)
+            width: 360px 
+        @include responsive(tablet)
+            width: 315px
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 2
+            grid-row-end: 3
+
+    &-title 
+        display: flex
+        align-items: center
+        grid-column-start: 3
+        grid-column-end: 4
+        grid-row-start: 1
+        grid-row-end: 2
+        @include responsive(tablet)
+            justify-content: center
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 1
+            grid-row-end: 2
+        @include responsive(mobileM)
+            justify-content: left
+
+    &-content 
+        display: grid
+        grid-template-columns: 2fr 2fr 1fr
+        grid-template-rows: repeat(1,1fr)
+        justify-items: center
+        grid-column-start: 3
+        grid-column-end: 4
+        grid-row-start: 2
+        grid-row-end: 3
+        overflow: hidden
+        @include responsive(tablet)
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 3
+            grid-row-end: 4
+
+
+
+    &-post 
+        width: 320px 
+        background: $white
+        margin: 10px
+        padding: 20px 30px 
+        height: 200px
+        box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.23)
+        @include responsive(4k)
+            height: auto
+        @include responsive(laptop)
+            width: 240px
+            height: 140px
+
+        &__title
+            margin: 0 
+            display: flex
+            justify-content: space-between
+            &:after
+                content: ''
+                display: block
+                @include sprite($testimonials-tw)
+
+        &__cite 
+            margin: 0 
+            font-style: normal
+
+        &__feedback
+            margin: 34px 0 0 0 
+            text-align: left
+            
+.slider-controll
+    padding-top: 25px
+    grid-column-start: 3
+    grid-column-end: 4
+    grid-row-start: 3
+    grid-row-end: 4
+    @include responsive(4k)
+        padding-left: 10em
+    @include responsive(tablet) 
+        padding-bottom: 25px
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 4
+        grid-row-end: 5
+
+    &-point
+        width: 18px
+        height: 10px
+        border-radius: 25px 
+        background-color: $gray-nav
+        border: 0 
+        margin: 7.5px
+        &_active
+            background-color: $blue 
+            width: 30px
+
+        &:hover
+            background-color: $blue
+            transition: .9s 
+            width: 30px
+    
+
+
+

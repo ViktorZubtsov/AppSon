@@ -1,7 +1,8 @@
 .psd
 public
-build
+build 
 node_modules
+PSD 
 
 
 fonts.scss

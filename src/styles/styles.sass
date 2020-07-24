@@ -1,0 +1,90 @@
+@import utils/vars
+@import utils/_sprite.sass
+@import utils/fonts-layout.scss
+@import utils/mediaQueries.scss
+
+*
+*::before
+*::after 
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+html 
+    box-sizing: border-box
+    font-size: 62.5%  // 10px = 1rem; 10/16px = 62.5%;
+
+    @include responsive(4k) 
+        font-size: 95% // 12px = 1rem
+    
+
+    @include responsive(laptopL) 
+        font-size: 56.25%  // 9px = 1rem; 9/16px = 56.25%;
+    
+
+    @include responsive(laptop) 
+        font-size: 50%  // 8px 
+    
+
+
+.body 
+    color: $black 
+    font-weight: 400
+    line-height: 1.6
+    font-family: $medium-font
+    color: $gray-nav
+
+.wrapper 
+    width: 960px
+    margin: 0 auto
+
+    @include responsive(laptop)
+        width: 765px
+    @include responsive(tablet)
+        width: 85%
+
+.bg
+    background-color:  $bg 
+.bg-blue
+    background-color: $blue 
+
+.title 
+    color: $light-dark
+    font-size: 3.3rem
+    font-family: $medium-font
+    
+.description
+    font-size: 1.5rem
+a 
+    text-decoration: none
+    color: $black 
+
+li
+    list-style-type: none
+
+
+input::-webkit-input-placeholder 
+    color: $white
+input::-moz-placeholder          
+    color: $white
+input:-moz-placeholder           
+    color: $white
+input:-ms-input-placeholder      
+    color: $white
+
+
+button
+    cursor: pointer
+
+input:active, 
+input:focus 
+    outline: none
+
+button:active, 
+button:focus 
+    outline: none
+
+
+
+@import modules/modules
+@import utils/libs

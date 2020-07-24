@@ -49,6 +49,7 @@ $.gulp.task('build', $.gulp.series(
         'libs.js:build',
         'libs.css:build',
         'svg:build',
+        'sprite:build',
     )
 ));
 
