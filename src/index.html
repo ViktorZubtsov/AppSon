@@ -7,8 +7,8 @@
     <title>AppSon</title>
 </head>
 <body class="body">
-    <!-- <header class="header ">
-            <div class="header-top wrapper">
+    <header class="header ">
+            <div class="header-top">
                 <span class="logo">AppSon</span>
                 <nav class="nav">
                     <a class="nav__item nav__item_active" href="#">HOME</a>
@@ -19,24 +19,37 @@
                         <span class="button__text">SIGN UP</span>
                     </button>
                 </nav>
-            </div>
-            <div class="welcome">
-                <section class="welcome-content">
-                    <h1 class="welcome-content__title">Best Desktop App for You</h1>
-                    <p class="welcome-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, at temporibus iusto quia perspiciatis 
-                        rerum exercitationem repudiandae 
-                        quis error architecto sapiente ratione eaque magnam ipsa pariatur aliquam totam. Eos, consectetur.</p>
-                    <div class="welcome-content__btn">
-                        <button class="button button_theme_blue welcome-content__btn__button"  type="submit"><span class="button__text">Dowload</span></button>
-                        <button class="button button_theme_white welcome-content__btn__button"  type="submit"><span class="button__text">Free Trial</span></button>
+                <div id="nav" class="navigation">
+                    <div class="navigation__inner">
+                        <nav class="nav-menu nav-menu_mobile">
+                            <a class="nav-menu__link nav-menu__link_mobile nav-menu__link_active "  href="index.html" >HOME</a>
+                            <a class="nav-menu__link nav-menu__link_mobile "  target="_blank" href="./404.html" >FEATURES</a>
+                            <a class="nav-menu__link nav-menu__link_mobile "  target="_blank" href="./404.html" >PRICING</a>
+                            <button class="button button_theme_dark-blue"  type="submit">
+                                <span class="button__text">SIGN UP</span>
+                            </button>
+                        </nav>
                     </div>
-                </section>
+                </div>
+                <span class="menu-icon" id="show"></span>
+            </div>
+            <section class="welcome-content">
+                <h1 class="welcome-content__title">Best Desktop App for You</h1>
+                <p class="welcome-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, at temporibus iusto quia perspiciatis 
+                    rerum exercitationem repudiandae 
+                    quis error architecto sapiente ratione eaque magnam ipsa pariatur aliquam totam. Eos, consectetur.</p>
+                <div class="welcome-content__btn">
+                    <button class="button button_theme_blue welcome-content__btn__button"  type="submit"><span class="button__text">Dowload</span></button>
+                    <button class="button button_theme_white welcome-content__btn__button-white"  type="submit"><span class="button__text">Free Trial</span></button>
+                </div>
+            </section>
+            <span class="welcome">
                 <button id="scrollToDawn" class="btn-scroll-down welcome__btn-scroll-down" onclick="scrollToTop.goDawn();">
                     <span class="btn-scroll-down__content"></span>
                 </button>
-            </div>
+            </span>
     </header>
--->
+
     <div class="features  bg">
         <div class="card-features">
             <div class="card-features__icon card-features__icon_theme_light-blue">
@@ -62,7 +75,7 @@
         </div>
     </div>
 
-    <div class="about">
+    <!-- <div class="about">
         <div class="about-images bg-blue">
             <img class="about-images__img about-images__img_one"  src="./img/about-images_1.png" alt="about-images"><img  class="about-images__img about-images__img_two" src="./img/about-images_2.png" alt="about-images">
         </div>
@@ -83,7 +96,7 @@
         <div class="about-images bg-blue about-images_end">
             <img class="about-images__img about-images__img_three"  src="./img/about-images_3.png" alt="about-images"><img class="about-images__img about-images__img_four" src="./img/about-images_4.png" alt="about-images">
         </div>
-    </div>
+    </div> -->
 
     <section class="how-it-works news bg">
         <h2 class="how-it-works-title title news__title">How Does It Works?</h2>
