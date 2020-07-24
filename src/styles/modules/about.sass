@@ -3,6 +3,13 @@
     grid-template: repeat(2,1fr) / repeat(2,1fr) 
     padding: 70px 0
     grid-gap: 194px 0
+    @include responsive(laptopL)
+        padding: 70px 30px 
+    @include responsive (tablet)
+        grid-template: repeat(4, 1fr)/repeat(1, 1fr)
+        grid-gap: 20px 0 
+        padding: 21px 10px 
+        
 
     
     &-images 
@@ -10,6 +17,17 @@
         height: 420px 
         transform: rotate(45deg)
         border-radius: 49px
+        justify-self: center
+        @include responsive(4k)
+            justify-self: center
+        @include responsive(laptop)
+            width: 280px
+            height: 280px 
+        @include responsive(tablet)
+            width: 200px
+            height: 200px
+            justify-self: auto
+            
 
         &__img
             transform: rotate(-45deg)
@@ -20,18 +38,64 @@
             &_one
                 right: -151px
                 top: 0px
+                @include responsive(laptop)
+                    width: 170px
+                    right: -114px
+                    top: -20px
+                @include responsive(tablet)
+                    width: 120px
+                    right: -64px
+                    justify-self: start
+
         
             &_two
                 right: -288px
                 top: -487px
+                @include responsive(laptopL)
+                    right: -269px
+                @include responsive(laptop)
+                    width: 119px
+                    right: -209px
+                    top: -296px
+                @include responsive(tablet)
+                    width: 89px
+                    right: -129px
+                    top: -216px
+
             &_three
                 right: 2px
                 top: 113px
+                @include responsive(laptop)
+                    width: 170px
+                    right: -24px
+                    top: 68px 
+                @include responsive(tablet)
+                    width: 120px
+                    right: -4px
+                    top: 38px
+
             &_four
                 right: -106px
                 top: -377px   
+                @include responsive(laptop)
+                    width: 119px
+                    right: -109px
+                    top: -237px
+                @include responsive(tablet)
+                    width: 89px
+                    right: -69px
+                    top: -167px
+
+
+
         &_end
-            justify-self: end
+            justify-self: center
+            @include responsive(4k)
+                justify-self: center
+            @include responsive (tablet)
+                justify-self: start
+
+
 
 
 
@@ -42,6 +106,26 @@
         display: flex
         flex-direction: column
         justify-content: center
+        @include responsive(4k)
+            justify-self: center
+        @include responsive(laptopL)
+            width: 300px 
+        @include responsive(laptop)
+            justify-self: end
+        @include responsive(tablet)
+            justify-self: center
+
+        &_one
+            justify-self: center
+            @include responsive(laptop)
+                justify-self: end
+
+        &_two 
+            justify-self: center
+            @include responsive(laptop)
+                justify-self: start
+
+
         &__title 
 
         &__text 
