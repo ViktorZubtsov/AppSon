@@ -4,7 +4,7 @@
         display: grid
         grid-template-rows: 1fr
         grid-template-columns: 2fr 2fr 1fr 1fr 
-        padding: 2.8em 0 
+        padding: 2.8em 0
         font-family: $light-font
         font-size: 1.3rem 
         @include responsive(mobileM)
@@ -14,6 +14,7 @@
 
     &-copyright 
         color: $white 
+        justify-self: end
         @include responsive(mobileM)
             grid-column: 1/4
             grid-row: 2/3

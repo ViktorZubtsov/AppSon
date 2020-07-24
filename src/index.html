@@ -12,9 +12,9 @@
                 <span class="logo">AppSon</span>
                 <nav class="nav">
                     <a class="nav__item nav__item_active" href="#">HOME</a>
-                    <a class="nav__item" href="#">FEATURES</a>
-                    <a class="nav__item" href="#">PRICING</a>
-                    <a class="nav__item" href="#">PAGES</a>
+                    <a class="nav__item" href="#features">FEATURES</a>
+                    <a class="nav__item" href="#pricing">PRICING</a>
+                    <a class="nav__item" href="#news">PAGES</a>
                     <button class="button button_theme_dark-blue"  type="submit">
                         <span class="button__text">SIGN UP</span>
                     </button>
@@ -23,8 +23,9 @@
                     <div class="navigation__inner">
                         <nav class="nav-menu nav-menu_mobile">
                             <a class="nav-menu__link nav-menu__link_mobile nav-menu__link_active "  href="index.html" >HOME</a>
-                            <a class="nav-menu__link nav-menu__link_mobile "  target="_blank" href="./404.html" >FEATURES</a>
-                            <a class="nav-menu__link nav-menu__link_mobile "  target="_blank" href="./404.html" >PRICING</a>
+                            <a class="nav-menu__link nav-menu__link_mobile "  href="#features" >FEATURES</a>
+                            <a class="nav-menu__link nav-menu__link_mobile "  href="#pricing" >PRICING</a>
+                            <a class="nav-menu__link nav-menu__link_mobile" href="#news">PAGES</a>
                             <button class="button button_theme_dark-blue"  type="submit">
                                 <span class="button__text">SIGN UP</span>
                             </button>
@@ -50,7 +51,7 @@
             </span>
     </header>
 
-    <div class="features  bg">
+    <div class="features   bg" id="features">
         <div class="card-features">
             <div class="card-features__icon card-features__icon_theme_light-blue">
                 <img class="card-features__icon-img"  src="./img/Features-icon_1.png" alt="Features-icon">
@@ -75,7 +76,7 @@
         </div>
     </div>
 
-    <!-- <div class="about">
+    <div class="about">
         <div class="about-images bg-blue">
             <img class="about-images__img about-images__img_one"  src="./img/about-images_1.png" alt="about-images"><img  class="about-images__img about-images__img_two" src="./img/about-images_2.png" alt="about-images">
         </div>
@@ -96,7 +97,7 @@
         <div class="about-images bg-blue about-images_end">
             <img class="about-images__img about-images__img_three"  src="./img/about-images_3.png" alt="about-images"><img class="about-images__img about-images__img_four" src="./img/about-images_4.png" alt="about-images">
         </div>
-    </div> -->
+    </div> 
 
     <section class="how-it-works news bg">
         <h2 class="how-it-works-title title news__title">How Does It Works?</h2>
@@ -120,7 +121,7 @@
         </div>
     </section>
 
-    <div class="pricing">
+    <div class="pricing" id="pricing">
         <section class="pricing-plan ">
             <h2 class="pricing-plan__title">Pricing Plan</h2>
             <p class="pricing-plan__description ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet autem consequatur quam asperiores, delectus consectetur maxime minus?</p>
@@ -187,7 +188,7 @@
         </div>
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
         <h2 class="news__title title">Latest News From Us</h2>
         <p class="news__description description ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos animi eaque aliquam deleniti <br> debitis aut unde temporibus.</p>
         <div class="news-content">
@@ -237,8 +238,8 @@
         </form>
     </section>
 
-    <footer class="footer bg-blue">
-        <div class="footer-wrapper wrapper">
+    <footer class="footer bg-blue" id="footer">
+        <div class="footer-wrapper ">
             <p class="footer-copyright">© 2018 Copyright, All Rights Reserved by AppSon</p>
             <nav class="footer-nav">
                 <a href="#" class='footer-nav__link'>Terms & Condition</a>
