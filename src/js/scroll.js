@@ -1,7 +1,7 @@
 class Scroll  {
     constructor (el) {
         this.el = el;
-        
+
     }
     
     goUp() {
