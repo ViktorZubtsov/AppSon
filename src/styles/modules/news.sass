@@ -25,8 +25,10 @@
         grid-gap: 10px 
         padding: 50px 120px 
         @include responsive(4k)
-            grid-template-rows: repeat(3, 190px) 60px 
+            grid-template-rows: repeat(3, 175px) 60px 
         @include responsive(laptopL)
+            grid-template-rows: repeat(3, 144px) 60px 
+            
             padding: 50px 30px
         @include responsive(laptop)
             grid-template-columns: 1fr 2fr 1fr
@@ -71,6 +73,11 @@
             grid-column-end: 2
             grid-row-start: 1
             grid-row-end: 4
+            &>img 
+                width: 576px
+            @include responsive(4k)
+                &>img 
+                    width: 650px
             @include responsive(laptop)
                 grid-row: 1 / 2 
                 grid-column: 2 / 3 
