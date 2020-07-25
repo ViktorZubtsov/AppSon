@@ -1,5 +1,6 @@
 .about
     display: grid
+    overflow: hidden
     grid-template: repeat(2,1fr) / repeat(2,1fr) 
     padding: 70px 0
     grid-gap: 194px 0
@@ -8,7 +9,9 @@
     @include responsive (tablet)
         grid-template: repeat(4, 1fr)/repeat(1, 1fr)
         grid-gap: 20px 0 
-        padding: 21px 10px 
+        padding: 21px 40px
+    @include responsive (mobileL)
+        padding: 20px 0 
         
 
     
@@ -27,6 +30,8 @@
             width: 200px
             height: 200px
             justify-self: auto
+        @include responsive (mobileL)
+            justify-self: center
             
 
         &__img
@@ -36,31 +41,36 @@
             box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.23)
 
             &_one
-                right: -151px
-                top: 0px
+                right: -101px
+                top: 40px
                 @include responsive(laptop)
                     width: 170px
-                    right: -114px
-                    top: -20px
+                    right: -74px
+                    top: 10px
                 @include responsive(tablet)
                     width: 120px
-                    right: -64px
-                    justify-self: start
+                    right: -45px
+                    top: 21px
+                @include responsive(mobileM)
+                    justify-self: center
 
         
             &_two
-                right: -288px
-                top: -487px
+                right: -228px
+                top: -447px
+                width: 220px
                 @include responsive(laptopL)
-                    right: -269px
+                    right: -227px
+                    top: -441px
+
                 @include responsive(laptop)
                     width: 119px
-                    right: -209px
-                    top: -296px
+                    right: -169px
+                    top: -276px
                 @include responsive(tablet)
                     width: 89px
-                    right: -129px
-                    top: -216px
+                    right: -107px
+                    top: -186px
 
             &_three
                 right: 2px
@@ -95,7 +105,9 @@
             @include responsive(laptopL)
                 justify-self: start
             @include responsive (tablet)
-                justify-self: start
+                justify-self: end
+            @include responsive (mobileL)
+                justify-self: center
 
 
 
@@ -121,12 +133,14 @@
             justify-self: center
             @include responsive(laptop)
                 justify-self: end
-
+            @include responsive(tablet)
+                justify-self: center
         &_two 
             justify-self: center
             @include responsive(laptop)
                 justify-self: start
-
+            @include responsive(tablet)
+                justify-self: center
 
         &__title 
 
