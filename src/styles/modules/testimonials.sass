@@ -61,7 +61,7 @@
             grid-column-end: 2
             grid-row-start: 3
             grid-row-end: 4
-
+            padding-left: 10px
 
 
     &-post 
@@ -77,6 +77,7 @@
         @include responsive(laptop)
             width: 240px
             height: 140px
+
 
         &__title
             margin: 0 
@@ -94,6 +95,10 @@
         &__feedback
             margin: 34px 0 0 0 
             text-align: left
+            @include responsive(laptop) 
+                margin: 10px 0 0 0 
+            @include responsive(mobileL)
+                margin: 14px 0 0 0 
             
 .slider-controll
     padding-top: 25px
@@ -102,14 +107,17 @@
     grid-row-start: 3
     grid-row-end: 4
     @include responsive(4k)
-        padding-left: 10em
+        padding-left: 0em
+
     @include responsive(tablet) 
+        padding-left: 10px
         padding-bottom: 25px
         grid-column-start: 1
         grid-column-end: 2
         grid-row-start: 4
         grid-row-end: 5
-
+    @include responsive(mobailL) 
+        padding-left: 15px
     &-point
         width: 18px
         height: 10px

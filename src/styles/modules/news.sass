@@ -1,9 +1,10 @@
 .news
-    padding:  7em 0
+    padding:  150px 0 127px 
     display: flex
     align-items: center
     flex-direction: column
-
+    @include responsive(tablet)
+        padding:  50px 0 
 
     &__title 
         background-image: url('../img/news-logo.png')
@@ -51,7 +52,7 @@
         @include responsive(mobileM)
             flex-direction: column
         
-
+        
         &-content 
             padding:  0 0 0 25px
                 
@@ -75,6 +76,7 @@
             grid-row-end: 4
             &>img 
                 width: 576px
+                border-radius: 10px
             @include responsive(4k)
                 &>img 
                     width: 650px
@@ -111,6 +113,8 @@
             grid-row-end: 4
             @include responsive(laptop)
                 grid-row: 4 / 5
+        &>img
+            border-radius: 10px
             
 .news-first-post__button
     margin: 35px 0 
