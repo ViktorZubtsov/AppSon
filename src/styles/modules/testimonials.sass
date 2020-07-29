@@ -61,7 +61,7 @@
             grid-column-end: 2
             grid-row-start: 3
             grid-row-end: 4
-            padding-left: 10px
+            // padding-left: 10px
 
 
     &-post 
@@ -130,9 +130,31 @@
             width: 30px
 
         &:hover
-            background-color: $blue
-            transition: .9s 
-            width: 30px
+            transition: .4s 
+
+
+
+
+
+.slider__item
+    animation-name: fade
+    animation-duration: 1.5s
+
+@-webkit-keyframes fade 
+    from 
+        opacity: .4
+    
+    to 
+        opacity: 1
+
+@keyframes fade 
+    from 
+        opacity: .4
+    
+    to 
+        opacity: 1
+
+
     
 
 
