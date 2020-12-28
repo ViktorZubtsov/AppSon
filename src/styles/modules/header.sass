@@ -157,8 +157,8 @@
 
     &_active 
         background-color: transparent
-  
-  
+        position: fixed
+        right: 23px
         &::before 
             transform: rotate(45deg)
             top: 0
@@ -183,6 +183,12 @@
 
         &_active
             display: flex   
+            position: fixed 
+            right: 23px
+
+.nav-menu
+    display: none
+
 
 .nav-menu_mobile
         width: 100%
@@ -201,3 +207,9 @@
     &:active,
     &_active 
         color: $blue
+.navigation
+    width: 100%
+
+.nav-menu__button 
+    width: 220px
+    margin: 15px auto
