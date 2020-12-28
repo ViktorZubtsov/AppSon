@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./img/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="./img/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="./img/apple-touch-icon-1024x1024.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./libs/libs.css">
     <title>AppSon</title>
 </head>
 <body class="body">
@@ -22,11 +41,11 @@
                 <div id="nav" class="navigation">
                     <div class="navigation__inner">
                         <nav class="nav-menu nav-menu_mobile">
-                            <a class="nav-menu__link nav-menu__link_mobile nav-menu__link_active "  href="index.html" >HOME</a>
-                            <a class="nav-menu__link nav-menu__link_mobile "  href="#features" >FEATURES</a>
-                            <a class="nav-menu__link nav-menu__link_mobile "  href="#pricing" >PRICING</a>
-                            <a class="nav-menu__link nav-menu__link_mobile" href="#news">PAGES</a>
-                            <button class="button button_theme_dark-blue"  type="submit">
+                            <a class="nav-menu__link nav-menu__link_mobile nav-menu__link_active  wow fadeInLeft" data-wow-delay="0.2s"  href="index.html" >HOME</a>
+                            <a class="nav-menu__link nav-menu__link_mobile  wow fadeInLeft" data-wow-delay="0.3s"  href="#features" >FEATURES</a>
+                            <a class="nav-menu__link nav-menu__link_mobile wow fadeInLeft" data-wow-delay="0.4s"    href="#pricing" >PRICING</a>
+                            <a class="nav-menu__link nav-menu__link_mobile wow fadeInLeft" data-wow-delay="0.5s"   href="#news">PAGES</a>
+                            <button class="button button_theme_dark-blue nav-menu__button  wow fadeInLeft" data-wow-delay="0.6s"   type="submit">
                                 <span class="button__text">SIGN UP</span>
                             </button>
                         </nav>
@@ -129,9 +148,8 @@
                 <button class="button button_theme_blue  button_left"  ><span class="button__text">Montnly</span></button>
                 <button class="button button_theme_white button_riht"  ><span class="button__text">Yearly</span></button> 
             </div>
-
         </section>
-        <div class="pricing-card">
+        <div class="pricing-card br">
             <span class="pricing-card__icon ">
                 <img src="./img/Pricing-icon_1.png" alt="Pricing-icon">
             </span>
@@ -145,7 +163,7 @@
             <span class="pricing-card__price">$19.00</span>
             <button class="button button_theme_blue pricing-card__button"  ><span class="button__text">Try Now</span></button>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card br">
             <span class="pricing-card__icon ">
                 <img src="./img/Pricing-icon_2.png" alt="Pricing-icon">
             </span>
@@ -160,31 +178,67 @@
             <button class="button button_theme_white pricing-card__button"  ><span class="button__text">Try Now</span></button>
         </div>
     </div>
-
+    
     <section class="testimonials bg">
         <img src="./img/testimonials-img.png" alt="testimonials" class="testimonials-img">
         <h2 class="testimonials-title title">Trusted By More Than 55M Peoples</h2>
-        <div class="testimonials-content">
-            <blockquote class="testimonials-post">
-                <h4 class="testimonials-post__title pricing-card__title">Raisa Moni</h4>
-                <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
-                <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
-            </blockquote>
-            <blockquote class="testimonials-post">
-                <h4 class="testimonials-post__title pricing-card__title">Raisa Moni</h4>
-                <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
-                <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
-            </blockquote>
-            <blockquote class="testimonials-post">
-                <h4 class="testimonials-post__title pricing-card__title">Raisa Moni</h4>
-                <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
-                <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
-            </blockquote>
+        <div class="testimonials-content slider">
+            <div class="slider__item">
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">Raisa Moni</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">James Mary</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">John Patricia</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+            </div>
+            <div class="slider__item">
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">John Patricia</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">Robert Linda</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">David Maria</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+            </div>
+            <div class="slider__item">
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">David Maria</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">Brain Ruth</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+                <blockquote class="testimonials-post  br">
+                    <h4 class="testimonials-post__title pricing-card__title">Raisa Moni</h4>
+                    <cite class="testimonials-post__cite pricing-card__features">Envato Customer</cite>
+                    <p class="testimonials-post__feedback pricing-card__features">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias nobis modi laudantium aliquam excepturi dolorem numquam?</p>
+                </blockquote>
+            </div>
         </div>
         <div class="slider-controll">
-            <button class="slider-controll-point slider-controll-point_active"></button>
-            <button class="slider-controll-point"></button>
-            <button class="slider-controll-point"></button>
+            <button class="slider-controll-point "  onclick="currentSlide(1)"></button>
+            <button class="slider-controll-point" onclick="currentSlide(2)"></button>
+            <button class="slider-controll-point" onclick="currentSlide(3)"></button>
         </div>
     </section>
 
@@ -251,15 +305,20 @@
                 <a href="#" class="footer-social__icon footer-social__icon_tw"></a>
                 <a href="#" class="footer-social__icon footer-social__icon_yt"></a>
             </div>
-            <div class="footer-scroll">
-                <button id="scrollToTop" class="btn-scroll-up " onclick="scrollToTop.goUp();"  >
-                    <span class="btn-scroll-up__content"></span>
-                </button>
-            </div>
-
         </div>
     </footer>
 
+    <button id="scrollToTop" class="btn-scroll-up " onclick="scrollToTop.goUp();"  >
+        <span class="btn-scroll-up__content"></span>
+    </button> 
+    
     <script src="./js/script.js"></script>
+<!-- WOW.js -->
+<script src="./libs/libs.js" ></script>
+<script>
+    var wow = new WOW;
+    wow.init();
+</script>
+
 </body>
 </html>
