@@ -1,5 +1,5 @@
 # AppSon
-
+(максимальная ширина экрана 1800px)
 Result: https://viktorzubtsov.github.io/AppSon/
 
 ## :hammer_and_wrench: Установка
